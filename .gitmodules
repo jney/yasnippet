@@ -1,0 +1,12 @@
+[submodule "extras/bundles/html-tmbundle"]
+	path = extras/bundles/html-tmbundle
+	url = http://github.com/textmate/html.tmbundle.git
+[submodule "extras/bundles/ruby-tmbundle"]
+	path = extras/bundles/ruby-tmbundle
+	url = http://github.com/textmate/ruby.tmbundle.git
+[submodule "extras/bundles/rails-tmbundle"]
+	path = extras/bundles/rails-tmbundle
+	url = http://github.com/textmate/ruby-on-rails.tmbundle.git
+[submodule "extras/bundles/css-tmbundle"]
+	path = extras/bundles/css-tmbundle
+	url = http://github.com/textmate/css.tmbundle.git
