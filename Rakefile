@@ -16,14 +16,14 @@ task :bundle do
 end
 
 desc "generate bundle file for textmate snippets."
-task :textmate_bundle do
+task :textmate_bundle => [:convert] do
   sh 'emacs --batch -l yasnippet.el --eval "(yas/compile-textmate-bundle)"'
   sh "tar czf pkg/yasnippet-textmate-bundle-#{$version}.el.tgz yasnippet-textmate-bundle.el"
 end
 
 desc "convert some textmate bundles to yasnippets"
 task :convert_bundles do
-  sh 'for bundle in html ruby rails; do ./extras/textmate_import.rb -d extras/bundles/$bundle-bundle -o extras/imported/$bundle-mode -q ; done'
+  sh 'for bundle in html ruby rails css; do ./extras/textmate_import.rb -d extras/bundles/$bundle-tmbundle -o extras/imported/$bundle-mode -q ; done'
 end
 
 desc "create a release package"
