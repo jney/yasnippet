@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# uuid: 81CCEB84-6241-4E4F-BB26-54BAAFA3FF2E
+# key: background
+# contributor: Translated from textmate snippet by PROGRAM_NAME
+# name: filter: AlphaImageLoader [for IE PNGs]
+## condition: "
+# --
+${3:background-image: none;
+}filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='${1:`(or (yas/selected-text) "/images/transparent.png")`}', sizingMethod='${2:image/scale/crop}');
