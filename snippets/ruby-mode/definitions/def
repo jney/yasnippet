@@ -1,6 +1,10 @@
 #name : def ... end
 #group : definitions
 # --
+<<<<<<< HEAD
 def ${1:method_name}(${2:*args})
+=======
+def ${1:method_name}(${2:args*})
+>>>>>>> 37c83f6e972949c0a4021f06b4105004d461ef49
   $0
 end
